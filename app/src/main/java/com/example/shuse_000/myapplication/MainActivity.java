@@ -14,17 +14,17 @@ import android.widget.ImageView;
 import java.io.File;
 
 public class MainActivity extends Activity {
-    Button btn;
-    ImageView imageView;
-    static final int CAM_REQUEST=1;
+    private Button cameraButton;
+    private ImageView imageView;
+    private static final int CAM_REQUEST = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn= findViewById(R.id.picBtn);
-        imageView= findViewById(R.id.imgCap);
-        btn.setOnClickListener(new View.OnClickListener() {
+        cameraButton = findViewById(R.id.picBtn);
+        imageView = findViewById(R.id.imgCap);
+        cameraButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -50,6 +50,7 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
         String path="sdcard/camera_app/cam_img.jpg";
         imageView.setImageDrawable(Drawable.createFromPath(path));
         if (requestCode == CAM_REQUEST && resultCode == RESULT_OK) {

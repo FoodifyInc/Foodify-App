@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../Foodify-App.iml" filepath="$PROJECT_DIR$/../Foodify-App.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/app.iml" filepath="$PROJECT_DIR$/.idea/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" />
+      <module fileurl="file://C:\Users\Gautham\Documents\GitHub\Foodify-App\app\.idea\app.iml" filepath="C:\Users\Gautham\Documents\GitHub\Foodify-App\app\.idea\app.iml" />
     </modules>
   </component>
 </project>
