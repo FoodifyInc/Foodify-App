@@ -1,4 +1,4 @@
-package com.example.shuse_000.myapplication;
+package com.foodify.app;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import com.example.shuse_000.myapplication.R;
 
 import java.io.File;
 
